@@ -1,0 +1,23 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    color: #222;
+}
+
+#question {
+    font-size: 1.5em;
+}
+
+#answer {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+#reveal {
+    margin: 1em;
+}

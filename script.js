@@ -1,18 +1,17 @@
 let verbs = [
-    ['walk', 'walked', 'walked'],
-    ['write', 'wrote', 'written']
-]
+    ['walk', 'walked'],
+    ['write', 'wrote'],
+    ['sleep', 'slept'],
+    ['read', 'read'],
+    ['swim', 'swam'],
+];
+
 let currentVerb = 0;
 let status = 'asking';
 
 function reveal() {
-    let answerPresentElem = document.getElementById('answerPresent');
     let answerPastElem = document.getElementById('answerPast');
-    let answerPerfectElem = document.getElementById('answerPerfect');
-
-    answerPresentElem.textContent = verbs[currentVerb][0];
     answerPastElem.textContent = verbs[currentVerb][1];
-    answerPerfectElem.textContent = verbs[currentVerb][2];
 }
 
 function ask() {
@@ -21,12 +20,8 @@ function ask() {
 }
 
 function resetAnswer() {
-    let answerPresentElem = document.getElementById('answerPresent');
     let answerPastElem = document.getElementById('answerPast');
-    let answerPerfectElem = document.getElementById('answerPerfect');
-    answerPresentElem.textContent = '';
-    answerPastElem.textContent = '';
-    answerPerfectElem.textContent = '';
+    answerPastElem.textContent = '...';
 }
 
 function buttonClicked() {

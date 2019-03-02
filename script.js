@@ -1,3 +1,5 @@
+'use strict';
+
 let verbs = [
     ['walk', 'walked', false],
     ['write', 'wrote', false],
